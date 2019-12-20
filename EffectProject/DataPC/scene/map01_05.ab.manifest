@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 4136424495
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cd9c2e5c3304f3b53d86ba8ca0bd8214
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Scenes/map01/texture/map01_05.tga
+Dependencies: []

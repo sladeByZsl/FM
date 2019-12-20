@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1880729834
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a627097e74f8a234d00801971192d569
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7e9ee104d6bb707fb2602b751e6f78b1
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Scenes/map01/shader/UnlitColor(nofog).shader
+Dependencies: []

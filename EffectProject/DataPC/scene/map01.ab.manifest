@@ -1,0 +1,63 @@
+ManifestFileVersion: 0
+CRC: 3555268440
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e36d53746c1266b1193fd9f79945e655
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8bf0dcf8ec382e75ea263aeefa73bb00
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 81
+  Script: {instanceID: 0}
+- Class: 104
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 157
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 205
+  Script: {instanceID: 0}
+Assets:
+- Assets/Scenes/map01.unity
+Dependencies:
+- E:/zsl/EffectProject/EffectProject/Assets/../DataPC/scene/map01_fx_bubble.ab
+- E:/zsl/EffectProject/EffectProject/Assets/../DataPC/scene/map01_sky.ab
+- E:/zsl/EffectProject/EffectProject/Assets/../DataPC/scene/level_unlitcolor(nofog)_alphatest.ab
+- E:/zsl/EffectProject/EffectProject/Assets/../DataPC/scene/map01_01.ab
+- E:/zsl/EffectProject/EffectProject/Assets/../DataPC/scene/map01_02.ab
+- E:/zsl/EffectProject/EffectProject/Assets/../DataPC/scene/map01_04.ab
+- E:/zsl/EffectProject/EffectProject/Assets/../DataPC/scene/unlitcolor(nofog).ab
+- E:/zsl/EffectProject/EffectProject/Assets/../DataPC/scene/map01_05.ab
+- E:/zsl/EffectProject/EffectProject/Assets/../DataPC/scene/level_unlitcolor(fog)_alphatest.ab
+- E:/zsl/EffectProject/EffectProject/Assets/../DataPC/scene/terrain_4map.ab
+- E:/zsl/EffectProject/EffectProject/Assets/../DataPC/scene/map01_06.ab
+- E:/zsl/EffectProject/EffectProject/Assets/../DataPC/scene/map01_terrainmask.ab
+- E:/zsl/EffectProject/EffectProject/Assets/../DataPC/scene/magic_line.ab
+- E:/zsl/EffectProject/EffectProject/Assets/../DataPC/scene/map01_07.ab
+- E:/zsl/EffectProject/EffectProject/Assets/../DataPC/scene/particleaddnofog.ab

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 184572433
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cc6b251499c15910da9f6d473a28e9e8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Scenes/map01/texture/map01_terrainmask.png
+Dependencies: []

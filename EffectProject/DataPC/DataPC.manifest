@@ -1,0 +1,70 @@
+ManifestFileVersion: 0
+CRC: 1373267979
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: scene/map01_fx_bubble.ab
+      Dependencies: {}
+    Info_1:
+      Name: scene/map01_sky.ab
+      Dependencies: {}
+    Info_2:
+      Name: scene/level_unlitcolor(nofog)_alphatest.ab
+      Dependencies: {}
+    Info_3:
+      Name: scene/map01_01.ab
+      Dependencies: {}
+    Info_4:
+      Name: scene/map01_02.ab
+      Dependencies: {}
+    Info_5:
+      Name: scene/map01_04.ab
+      Dependencies: {}
+    Info_6:
+      Name: scene/unlitcolor(nofog).ab
+      Dependencies: {}
+    Info_7:
+      Name: scene/map01_05.ab
+      Dependencies: {}
+    Info_8:
+      Name: scene/level_unlitcolor(fog)_alphatest.ab
+      Dependencies: {}
+    Info_9:
+      Name: scene/terrain_4map.ab
+      Dependencies: {}
+    Info_10:
+      Name: scene/map01_06.ab
+      Dependencies: {}
+    Info_11:
+      Name: scene/map01_terrainmask.ab
+      Dependencies: {}
+    Info_12:
+      Name: scene/magic_line.ab
+      Dependencies: {}
+    Info_13:
+      Name: scene/map01_07.ab
+      Dependencies: {}
+    Info_14:
+      Name: scene/particleaddnofog.ab
+      Dependencies: {}
+    Info_15:
+      Name: scene/map01.ab
+      Dependencies:
+        Dependency_0: scene/map01_fx_bubble.ab
+        Dependency_1: scene/map01_sky.ab
+        Dependency_2: scene/level_unlitcolor(nofog)_alphatest.ab
+        Dependency_3: scene/map01_01.ab
+        Dependency_4: scene/map01_02.ab
+        Dependency_5: scene/map01_04.ab
+        Dependency_6: scene/unlitcolor(nofog).ab
+        Dependency_7: scene/map01_05.ab
+        Dependency_8: scene/level_unlitcolor(fog)_alphatest.ab
+        Dependency_9: scene/terrain_4map.ab
+        Dependency_10: scene/map01_06.ab
+        Dependency_11: scene/map01_terrainmask.ab
+        Dependency_12: scene/magic_line.ab
+        Dependency_13: scene/map01_07.ab
+        Dependency_14: scene/particleaddnofog.ab
+    Info_16:
+      Name: scene/start_game.ab
+      Dependencies: {}
