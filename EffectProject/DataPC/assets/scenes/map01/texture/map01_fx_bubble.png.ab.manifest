@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3000079530
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 74719a83cf76d2f9560338dd689bf8c4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Scenes/map01/texture/map01_fx_bubble.png
+Dependencies: []

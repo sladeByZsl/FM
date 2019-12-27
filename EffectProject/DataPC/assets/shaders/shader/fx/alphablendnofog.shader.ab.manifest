@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3260252412
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0c8190ead1033159c6e25c51fb724f71
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7e9ee104d6bb707fb2602b751e6f78b1
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Shaders/shader/FX/AlphaBlendNoFog.shader
+Dependencies: []

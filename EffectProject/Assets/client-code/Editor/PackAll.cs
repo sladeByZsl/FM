@@ -13,6 +13,7 @@ namespace XFrameWork.Editor
     public partial class PackAssetBundle
     {
         public static List<AssetBundleBuild> mPackList = new List<AssetBundleBuild>();
+        public static string rootPath = EditorCommon.DataPath + EditorCommon.BundleFolder + "/";
 
         [MenuItem("Build/BuildAll")]
         static void BuildAll()
@@ -32,18 +33,18 @@ namespace XFrameWork.Editor
             BuildPipeline.BuildAssetBundles(outputDir, mPackList.ToArray(), BuildAssetBundleOptions.DeterministicAssetBundle, EditorCommon.BuildTarget);
         }
 
-        public static AssetBundleBuild GetAssetBundleBuild(string fullPath, EditorCommon.BundleType bundleType)
+        public static AssetBundleBuild GetAssetBundleBuild(string fullPath, BundleType bundleType, ResType resType)
         {
             AssetBundleBuild ab = new AssetBundleBuild();
             ab.assetNames = new string[] { fullPath }; //相对于Assets的目录
-            ab.assetBundleName = EditorCommon.GetBundleName(fullPath, bundleType);//ab包的名字，可以带目录
+            ab.assetBundleName = EditorCommon.GetBundleName(fullPath, bundleType, resType);//ab包的名字，可以带目录
             ab.assetBundleVariant = string.Empty;
             return ab;
         }
 
-        public static bool IsPathContain(string dep, EditorCommon.BundleType bundleType)
+        public static bool IsPathContain(string dep, BundleType bundleType, ResType resType)
         {
-            string fileName = EditorCommon.GetBundleName(dep, bundleType);
+            string fileName = EditorCommon.GetBundleName(dep, bundleType, resType);
             for (int i = 0; i < mPackList.Count; i++)
             {
                 if (mPackList[i].assetBundleName.Contains(fileName))

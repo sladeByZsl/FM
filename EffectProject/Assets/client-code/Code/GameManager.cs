@@ -2,9 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using XFrameWork.Common;
 
 public class GameManager : MonoBehaviour
 {
+    private void Start()
+    {
+        string path = localPath + "DataPC/";
+        AssetManager.Initialize(path, "DataPC",
+            () => { OnInitSuccess(); },
+            (error) => { Debug.LogError(error); });
+
+    }
+
+    public void OnInitSuccess()
+    {
+        Debug.LogError("success");
+        BundleManager.Load("particle/fx_01_cb_bonus_bao_small_green.ab");
+    }
+
+    public static string localPath
+    {
+        get
+        {
+#if UNITY_STANDALONE_WIN || UNITY_EDITOR
+            return string.Format("{0}/../", Application.dataPath);
+#else
+			return string.Format("{0}/", Application.persistentDataPath);
+#endif
+        }
+    }
+
+    /*
     // Start is called before the first frame update
     void Start()
     {
@@ -69,5 +98,5 @@ public class GameManager : MonoBehaviour
 			return string.Format("{0}/", Application.persistentDataPath);
 #endif
         }
-    }
+    }*/
 }

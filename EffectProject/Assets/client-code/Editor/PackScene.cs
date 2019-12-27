@@ -14,32 +14,35 @@ namespace XFrameWork.Editor
         static void PackScene()
         {
             string srcDir = "Assets/Scenes";
-            string outputDir = EditorCommon.DataPath + EditorCommon.BundleFolder + "/" + EditorCommon.BundleSceneFolder + "/";
+            string outputDir = rootPath + EditorCommon.BundleSceneFolder + "/";
 
             EditorCommon.ClearDirectoryIfNotCreate(outputDir);
 
-            List<string> fxList = EditorCommon.GetScenes(srcDir);
-            foreach (string fx in fxList)
+            List<string> objList = EditorCommon.GetScenes(srcDir);
+            foreach (string obj in objList)
             {
-                Debug.Log("------------fx--------------:" + fx);
-                string[] deps = AssetDatabase.GetDependencies(fx);
+                Debug.Log("------------fx--------------:" + obj);
+                string[] deps = AssetDatabase.GetDependencies(obj);
+                ResType resType;
                 foreach (string dep in deps)
                 {
                     //Debug.Log("dep:" + dep);
-                    if (EditorCommon.IsTexture(dep) ||
-                        EditorCommon.isShader(dep))
+                    resType = EditorCommon.GetBundleType(dep);
+                    if (resType == ResType.Texture ||
+                        resType == ResType.Shader)
                     {
                         Debug.Log("dep:" + dep);
-                        AssetBundleBuild ab = GetAssetBundleBuild(dep, EditorCommon.BundleType.Scene);
-                        if (!IsPathContain(dep, EditorCommon.BundleType.Scene))
+                        AssetBundleBuild ab = GetAssetBundleBuild(dep, BundleType.Scene, resType);
+                        if (!IsPathContain(dep, BundleType.Scene, resType))
                         {
                             mPackList.Add(ab);
                         }
                     }
                 }
 
-                AssetBundleBuild fx_ab = GetAssetBundleBuild(fx, EditorCommon.BundleType.Scene);
-                if (!IsPathContain(fx, EditorCommon.BundleType.Scene))
+                resType = ResType.Scene;
+                AssetBundleBuild fx_ab = GetAssetBundleBuild(obj, BundleType.Scene, resType);
+                if (!IsPathContain(obj, BundleType.Scene, resType))
                 {
                     mPackList.Add(fx_ab);
                 }

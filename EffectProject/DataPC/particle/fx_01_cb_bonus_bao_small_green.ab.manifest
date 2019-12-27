@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 3703783125
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cc16b61ab73b70e2e46a6e3978818d5c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8e7a9a5bc260fb3cb7f278e39396d550
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/effect/prefab/fx_01_cb_bonus_bao_small_green.prefab
+Dependencies:
+- E:/zsl/FM/EffectProject/Assets/../DataPC/assets/arts/effect/res/texture/tex_01/fx_tex_01_bao_02.png.ab
+- E:/zsl/FM/EffectProject/Assets/../DataPC/assets/arts/effect/res/texture/tex_01/fx_tex_01_glow_01.png.ab
+- E:/zsl/FM/EffectProject/Assets/../DataPC/assets/shaders/shader/fx/particleaddnofog.shader.ab
+- E:/zsl/FM/EffectProject/Assets/../DataPC/assets/arts/effect/res/texture/tex_01/fx_tex_01_xiao_san_04.png.ab
+- E:/zsl/FM/EffectProject/Assets/../DataPC/assets/arts/effect/res/texture/tex_01/fx_tex_01_glow_07.png.ab

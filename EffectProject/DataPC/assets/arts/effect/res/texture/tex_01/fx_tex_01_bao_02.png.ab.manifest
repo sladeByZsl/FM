@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2446528376
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0539d0ed53dd12f3f519f0ed384a6f21
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/effect/res/texture/tex_01/fx_tex_01_bao_02.png
+Dependencies: []

@@ -1,70 +1,124 @@
 ManifestFileVersion: 0
-CRC: 1373267979
+CRC: 2739078545
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: scene/map01_fx_bubble.ab
+      Name: assets/shaders/shader/fx/alphablendnofog.shader.ab
       Dependencies: {}
     Info_1:
-      Name: scene/map01_sky.ab
+      Name: assets/arts/effect/res/texture/tex_01/fx_tex_01_bao_02.png.ab
       Dependencies: {}
     Info_2:
-      Name: scene/level_unlitcolor(nofog)_alphatest.ab
+      Name: assets/arts/effect/res/texture/tex_01/fx_tex_01_glow_01.png.ab
       Dependencies: {}
     Info_3:
-      Name: scene/map01_01.ab
+      Name: assets/arts/effect/res/texture/tex_01/fx_tex_01_shui_jing_04.png.ab
       Dependencies: {}
     Info_4:
-      Name: scene/map01_02.ab
+      Name: assets/arts/effect/res/texture/tex_01/fx_tex_01_huan_08.png.ab
       Dependencies: {}
     Info_5:
-      Name: scene/map01_04.ab
+      Name: assets/arts/effect/res/texture/tex_01/fx_tex_01_xiao_san_05.png.ab
       Dependencies: {}
     Info_6:
-      Name: scene/unlitcolor(nofog).ab
+      Name: assets/shaders/shader/fx/particleaddnofog.shader.ab
       Dependencies: {}
     Info_7:
-      Name: scene/map01_05.ab
-      Dependencies: {}
+      Name: particle/fx_01_cb_bonus_bao2_purple.ab
+      Dependencies:
+        Dependency_0: assets/shaders/shader/fx/alphablendnofog.shader.ab
+        Dependency_1: assets/arts/effect/res/texture/tex_01/fx_tex_01_bao_02.png.ab
+        Dependency_2: assets/arts/effect/res/texture/tex_01/fx_tex_01_glow_01.png.ab
+        Dependency_3: assets/arts/effect/res/texture/tex_01/fx_tex_01_shui_jing_04.png.ab
+        Dependency_4: assets/arts/effect/res/texture/tex_01/fx_tex_01_huan_08.png.ab
+        Dependency_5: assets/arts/effect/res/texture/tex_01/fx_tex_01_xiao_san_05.png.ab
+        Dependency_6: assets/shaders/shader/fx/particleaddnofog.shader.ab
     Info_8:
-      Name: scene/level_unlitcolor(fog)_alphatest.ab
+      Name: assets/arts/effect/res/texture/tex_01/fx_tex_01_xiao_san_04.png.ab
       Dependencies: {}
     Info_9:
-      Name: scene/terrain_4map.ab
+      Name: assets/arts/effect/res/texture/tex_01/fx_tex_01_glow_07.png.ab
       Dependencies: {}
     Info_10:
-      Name: scene/map01_06.ab
-      Dependencies: {}
+      Name: particle/fx_01_cb_bonus_bao_small_green.ab
+      Dependencies:
+        Dependency_0: assets/arts/effect/res/texture/tex_01/fx_tex_01_bao_02.png.ab
+        Dependency_1: assets/arts/effect/res/texture/tex_01/fx_tex_01_glow_01.png.ab
+        Dependency_2: assets/shaders/shader/fx/particleaddnofog.shader.ab
+        Dependency_3: assets/arts/effect/res/texture/tex_01/fx_tex_01_xiao_san_04.png.ab
+        Dependency_4: assets/arts/effect/res/texture/tex_01/fx_tex_01_glow_07.png.ab
     Info_11:
-      Name: scene/map01_terrainmask.ab
+      Name: assets/scenes/map01/texture/map01_fx_bubble.png.ab
       Dependencies: {}
     Info_12:
-      Name: scene/magic_line.ab
+      Name: assets/scenes/map01/texture/map01_sky.tga.ab
       Dependencies: {}
     Info_13:
-      Name: scene/map01_07.ab
+      Name: assets/scenes/map01/shader/level_unlitcolor(nofog)_alphatest.shader.ab
       Dependencies: {}
     Info_14:
-      Name: scene/particleaddnofog.ab
+      Name: assets/scenes/map01/texture/map01_01.tga.ab
       Dependencies: {}
     Info_15:
+      Name: assets/scenes/map01/texture/map01_02.tga.ab
+      Dependencies: {}
+    Info_16:
+      Name: assets/scenes/map01/texture/map01_04.tga.ab
+      Dependencies: {}
+    Info_17:
+      Name: assets/scenes/map01/shader/unlitcolor(nofog).shader.ab
+      Dependencies: {}
+    Info_18:
+      Name: assets/scenes/map01/texture/map01_05.tga.ab
+      Dependencies: {}
+    Info_19:
+      Name: assets/scenes/map01/shader/level_unlitcolor(fog)_alphatest.shader.ab
+      Dependencies: {}
+    Info_20:
+      Name: assets/scenes/map01/shader/terrain_4map.shader.ab
+      Dependencies: {}
+    Info_21:
+      Name: assets/scenes/map01/texture/map01_06.tga.ab
+      Dependencies: {}
+    Info_22:
+      Name: assets/scenes/map01/texture/map01_terrainmask.png.ab
+      Dependencies: {}
+    Info_23:
+      Name: assets/scenes/map01/fx/res/texture/magic_line.png.ab
+      Dependencies: {}
+    Info_24:
+      Name: assets/scenes/map01/texture/map01_07.tga.ab
+      Dependencies: {}
+    Info_25:
       Name: scene/map01.ab
       Dependencies:
-        Dependency_0: scene/map01_fx_bubble.ab
-        Dependency_1: scene/map01_sky.ab
-        Dependency_2: scene/level_unlitcolor(nofog)_alphatest.ab
-        Dependency_3: scene/map01_01.ab
-        Dependency_4: scene/map01_02.ab
-        Dependency_5: scene/map01_04.ab
-        Dependency_6: scene/unlitcolor(nofog).ab
-        Dependency_7: scene/map01_05.ab
-        Dependency_8: scene/level_unlitcolor(fog)_alphatest.ab
-        Dependency_9: scene/terrain_4map.ab
-        Dependency_10: scene/map01_06.ab
-        Dependency_11: scene/map01_terrainmask.ab
-        Dependency_12: scene/magic_line.ab
-        Dependency_13: scene/map01_07.ab
-        Dependency_14: scene/particleaddnofog.ab
-    Info_16:
+        Dependency_0: assets/shaders/shader/fx/particleaddnofog.shader.ab
+        Dependency_1: assets/scenes/map01/texture/map01_fx_bubble.png.ab
+        Dependency_2: assets/scenes/map01/texture/map01_sky.tga.ab
+        Dependency_3: assets/scenes/map01/shader/level_unlitcolor(nofog)_alphatest.shader.ab
+        Dependency_4: assets/scenes/map01/texture/map01_01.tga.ab
+        Dependency_5: assets/scenes/map01/texture/map01_02.tga.ab
+        Dependency_6: assets/scenes/map01/texture/map01_04.tga.ab
+        Dependency_7: assets/scenes/map01/shader/unlitcolor(nofog).shader.ab
+        Dependency_8: assets/scenes/map01/texture/map01_05.tga.ab
+        Dependency_9: assets/scenes/map01/shader/level_unlitcolor(fog)_alphatest.shader.ab
+        Dependency_10: assets/scenes/map01/shader/terrain_4map.shader.ab
+        Dependency_11: assets/scenes/map01/texture/map01_06.tga.ab
+        Dependency_12: assets/scenes/map01/texture/map01_terrainmask.png.ab
+        Dependency_13: assets/scenes/map01/fx/res/texture/magic_line.png.ab
+        Dependency_14: assets/scenes/map01/texture/map01_07.tga.ab
+    Info_26:
+      Name: assets/arts/prefab/texture/startex.png.ab
+      Dependencies: {}
+    Info_27:
+      Name: assets/shaders/shader/star.shader.ab
+      Dependencies: {}
+    Info_28:
+      Name: scene/map02.ab
+      Dependencies:
+        Dependency_0: assets/arts/effect/res/texture/tex_01/fx_tex_01_bao_02.png.ab
+        Dependency_1: assets/arts/prefab/texture/startex.png.ab
+        Dependency_2: assets/shaders/shader/star.shader.ab
+    Info_29:
       Name: scene/start_game.ab
       Dependencies: {}

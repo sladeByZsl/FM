@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2564115324
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1b9d03faffc4b122e8d75df09f69027a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Scenes/map01/fx/res/texture/magic_line.png
+Dependencies: []

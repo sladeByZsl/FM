@@ -1,0 +1,41 @@
+ManifestFileVersion: 0
+CRC: 1404609301
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d4a294c46bbcafe0725078df15cce3a6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 64118ccbcc12897abba3a41ca3d53c50
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: b4146b11e901cf84b890c312b53a7df0, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 210
+  Script: {instanceID: 0}
+Assets:
+- Assets/Arts/effect/prefab/fx_01_cb_bonus_bao2_purple.prefab
+Dependencies:
+- E:/zsl/FM/EffectProject/Assets/../DataPC/assets/shaders/shader/fx/alphablendnofog.shader.ab
+- E:/zsl/FM/EffectProject/Assets/../DataPC/assets/arts/effect/res/texture/tex_01/fx_tex_01_bao_02.png.ab
+- E:/zsl/FM/EffectProject/Assets/../DataPC/assets/arts/effect/res/texture/tex_01/fx_tex_01_glow_01.png.ab
+- E:/zsl/FM/EffectProject/Assets/../DataPC/assets/arts/effect/res/texture/tex_01/fx_tex_01_shui_jing_04.png.ab
+- E:/zsl/FM/EffectProject/Assets/../DataPC/assets/arts/effect/res/texture/tex_01/fx_tex_01_huan_08.png.ab
+- E:/zsl/FM/EffectProject/Assets/../DataPC/assets/arts/effect/res/texture/tex_01/fx_tex_01_xiao_san_05.png.ab
+- E:/zsl/FM/EffectProject/Assets/../DataPC/assets/shaders/shader/fx/particleaddnofog.shader.ab

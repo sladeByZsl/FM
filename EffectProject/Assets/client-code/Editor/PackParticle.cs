@@ -21,32 +21,34 @@ namespace XFrameWork.Editor
         static void PackParticle()
         {
             string srcDir = "Assets/Arts/effect/prefab";
-            string outputDir = EditorCommon.DataPath + EditorCommon.BundleFolder + "/" + EditorCommon.BundleFxFolder + "/";
+            string outputDir = rootPath + EditorCommon.BundleFxFolder + "/";
 
             EditorCommon.ClearDirectoryIfNotCreate(outputDir);
-
-            List<string> fxList = EditorCommon.GetPrefabs(srcDir);
-            foreach (string fx in fxList)
+            List<string> objList = EditorCommon.GetPrefabs(srcDir);
+            foreach (string obj in objList)
             {
-                string[] deps = AssetDatabase.GetDependencies(fx);
+                string[] deps = AssetDatabase.GetDependencies(obj);
+                ResType resType;
                 foreach (string dep in deps)
                 {
                     Debug.Log("dep:" + dep);
-                    if (EditorCommon.IsTexture(dep) ||
-                        EditorCommon.IsAnimatorController(dep) ||
-                        EditorCommon.IsModel(dep) ||
-                        EditorCommon.isShader(dep))
+                    resType = EditorCommon.GetBundleType(dep);
+                    if (resType == ResType.Texture ||
+                        resType == ResType.AnimatorController ||
+                        resType == ResType.Model ||
+                        resType == ResType.Shader)
                     {
-                        AssetBundleBuild ab = GetAssetBundleBuild(dep, EditorCommon.BundleType.Particle);
-                        if (!IsPathContain(dep, EditorCommon.BundleType.Particle))
+                        AssetBundleBuild ab = GetAssetBundleBuild(dep, BundleType.Particle, resType);
+                        if (!IsPathContain(dep, BundleType.Particle, resType))
                         {
                             mPackList.Add(ab);
                         }
                     }
                 }
 
-                AssetBundleBuild fx_ab = GetAssetBundleBuild(fx, EditorCommon.BundleType.Particle);
-                if (!IsPathContain(fx, EditorCommon.BundleType.Particle))
+                resType = ResType.Prefab;
+                AssetBundleBuild fx_ab = GetAssetBundleBuild(obj, BundleType.Particle,resType);
+                if (!IsPathContain(obj, BundleType.Particle, resType))
                 {
                     mPackList.Add(fx_ab);
                 }

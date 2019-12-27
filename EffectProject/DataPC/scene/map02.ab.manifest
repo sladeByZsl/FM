@@ -1,0 +1,53 @@
+ManifestFileVersion: 0
+CRC: 114052050
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9bcd3535bfd41ec87bf15e9915b2bdfe
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2f06c9d3870b20e703a0ab65f9ca78ac
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 81
+  Script: {instanceID: 0}
+- Class: 104
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 68048efe48404be449b763e01398aa29, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 157
+  Script: {instanceID: 0}
+Assets:
+- Assets/Scenes/map02.unity
+Dependencies:
+- E:/zsl/FM/EffectProject/Assets/../DataPC/assets/arts/effect/res/texture/tex_01/fx_tex_01_bao_02.png.ab
+- E:/zsl/FM/EffectProject/Assets/../DataPC/assets/arts/prefab/texture/startex.png.ab
+- E:/zsl/FM/EffectProject/Assets/../DataPC/assets/shaders/shader/star.shader.ab

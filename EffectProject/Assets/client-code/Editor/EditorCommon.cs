@@ -17,6 +17,35 @@ using System.IO;
 
 namespace XFrameWork.Editor
 {
+    public enum ResType
+    {
+        Texture,
+        AnimatorController,
+        Model,
+        Shader,
+        Font,
+        Prefab,
+        Scene,
+        Unknown,
+    }
+
+    public enum BundleType
+    {
+        None,
+        Particle,
+        UIPrefab,
+        UIIcon,
+        UITexture,
+        UISpine,
+        UIParticle,
+        Audio,
+        Cinema,
+        Scene,
+        Spine,
+        Video,
+        Object,
+    }
+
     public class EditorCommon
     {
         public static int PackMode = 0;
@@ -33,24 +62,6 @@ namespace XFrameWork.Editor
 			return string.Format("{0}/", Application.persistentDataPath);
 #endif
             }
-        }
-
-        public enum BundleType
-        {
-            None = -1,
-
-            Particle = 0,
-            UIPrefab = 1,
-            UIIcon = 2,
-            UITexture = 3,
-            UISpine = 4,
-            UIParticle = 5,
-            Audio = 6,
-            Cinema = 7,
-            Scene = 8,
-            Spine = 9,
-            Vedio = 10,
-            Object = 11,
         }
 
 #if UNITY_ANDROID
@@ -247,6 +258,38 @@ namespace XFrameWork.Editor
             return IsRes(path, ".shader");
         }
 
+        public static ResType GetBundleType(string path)
+        {
+            if (IsTexture(path))
+            {
+                return ResType.Texture;
+            }
+            else if (IsAnimatorController(path))
+            {
+                return ResType.AnimatorController;
+            }
+            else if (IsModel(path))
+            {
+                return ResType.Model;
+            }
+            else if (isShader(path))
+            {
+                return ResType.Shader;
+            }
+            else if (IsFont(path))
+            {
+                return ResType.Font;
+            }
+            else if (IsPrefab(path))
+            {
+                return ResType.Prefab;
+            }
+            else
+            {
+                return ResType.Unknown;
+            }
+        }
+
 
         public static bool IsCS(string path)
         {
@@ -279,10 +322,25 @@ namespace XFrameWork.Editor
         }
 
 
-        public static string GetBundleName(string path, BundleType bundleType)
+        public static string GetBundleName(string path, BundleType bundleType,ResType resType)
         {
-            string fileName = System.IO.Path.GetFileNameWithoutExtension(path);
-            string abFileName = string.Format("{0}/{1}{2}", bundleType.ToString().ToLower(), fileName, BundleExtensions);
+            string fileName = string.Empty;
+            string abFileName = string.Empty;
+            if (resType == ResType.Texture || 
+                resType == ResType.AnimatorController ||
+                resType == ResType.Model ||
+                resType == ResType.Shader)
+            {
+                string extension= System.IO.Path.GetExtension(path);
+                path.Replace(".", "_");
+                fileName = path;//path.Replace(extension,"_"+ resType.ToString().ToLower());
+                abFileName = string.Format("{0}{1}", fileName, BundleExtensions);
+            }
+            else
+            {
+                fileName = System.IO.Path.GetFileNameWithoutExtension(path);
+                abFileName = string.Format("{0}/{1}{2}", bundleType.ToString().ToLower(), fileName, BundleExtensions);
+            }
             return abFileName;
         }
 
